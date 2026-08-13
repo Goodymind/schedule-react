@@ -48,6 +48,7 @@ function Card({ title = "", rowSpan = 1, row = -1, col = -1, type = "", details 
         return (
             <div className={className} style={{ gridRow: `span ${rowSpan}` }}>
                 <h3>{title}</h3>
+                {children}
             </div>
         )
     if (type !== "") {
