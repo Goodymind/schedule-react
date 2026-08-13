@@ -1,0 +1,52 @@
+#calendar {
+    display: grid;
+    width: 100vw;
+    max-width: 100%;
+    height: 70vh;
+    gap: 7px;
+    overflow: scroll;
+}
+
+.card {
+    padding: 1vw;
+    display: flex;
+}
+
+.card h3 {
+    margin: auto;
+}
+
+.class {
+    background: var(--class-bg);
+    border: 1px solid transparent;
+    color: var(--brown-text);
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+}
+
+.header {
+    background: var(--green-bg);
+    border: 1px solid var(--border);
+    border-bottom: 2px solid var(--border-shadow);
+    border-radius: 8px;
+    outline: var(--green-bg-outline);
+    color: var(--white-text);
+}
+
+.time {
+    background: var(--white-bg-gradient);
+    border: 1px solid var(--border);
+    border-bottom: 2px solid var(--border-shadow);
+    border-radius: 8px;
+    color: var(--brown-text);
+    outline: var(--white-bg-gradient-outline);
+}
+
+img {
+    width: clamp(2rem, 3vw, 4rem);
+    height: clamp(2rem, 3vw, 4rem);
+    margin: 0 8px 0 0;
+}
